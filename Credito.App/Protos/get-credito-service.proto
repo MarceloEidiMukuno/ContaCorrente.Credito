@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ContaCorrente.ApiCredito";
+
+package ContaCorrente.ApiCredito;
+
+service DebitoService {
+	rpc GetDebito (GetDebitoRequest) returns (GetDebitoReply);
+}
+
+message GetDebitoRequest {
+	int32 id = 1;
+}
+
+message GetDebitoReply {
+	int32 Id = 1;
+  string Agencia = 2;
+  string Conta = 3;
+  double Valor = 4;
+  string DataCriacao = 5;
+  string Descricao = 6;
+}
