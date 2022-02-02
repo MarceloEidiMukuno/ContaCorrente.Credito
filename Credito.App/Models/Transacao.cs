@@ -12,7 +12,7 @@ namespace ContaCorrente.ApiCredito.Models
 
         public Transacao(int Id, string Agencia, string Conta, decimal Valor, DateTime DataCriacao, string Descricao, int TipoTransacao)
         {
-            this.Id = Id;
+            this.TransacaoId = Id;
             this.Agencia = Agencia;
             this.Conta = Conta;
             this.Valor = Valor;
@@ -23,7 +23,7 @@ namespace ContaCorrente.ApiCredito.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; private set; }
+        public int TransacaoId { get; private set; }
 
         [Required]
         [MaxLength(80)]
