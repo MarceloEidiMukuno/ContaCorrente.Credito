@@ -10,9 +10,9 @@ namespace ContaCorrente.ApiCredito.Models
     {
         public const int VALORMINIMODESCRICAO = 10;
 
-        public Transacao(int Id, string Agencia, string Conta, decimal Valor, DateTime DataCriacao, string Descricao, int TipoTransacao)
+        public Transacao(int TransacaoId, string Agencia, string Conta, decimal Valor, DateTime DataCriacao, string Descricao, int TipoTransacao)
         {
-            this.TransacaoId = Id;
+            this.TransacaoId = TransacaoId;
             this.Agencia = Agencia;
             this.Conta = Conta;
             this.Valor = Valor;
